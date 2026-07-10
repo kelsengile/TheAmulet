@@ -1,8 +1,9 @@
 #  The Amulet  
 ### Champion Project – Nov Fest 2025 Hackathon Competition  
+
 **Theme:** Halloween  
 **Team:** Caveman Coders  
-**Program:** BSCS-1A (2025)  
+**Program:** Bachelor of Science in Computer Science 1A (2025)  
 **University:** Laguna State Polytechnic University  
 
 ---
@@ -19,16 +20,10 @@
 
 ---
 
-##  Developers  
+## Developers
 
-Kelsen Gile S. Conel  
-Charlestan D. Arroyo  
-Ralph Rexiel R. Lubuguin  
-Sean Fraser I. Castro  
-Xavier Kent C. Ortega  
-
-
----
-
-## Achievement  
- Champion – Nov Fest 2025 Hackathon Competition  
+- Conel, Kelsen Gile S.
+- Arroyo, Charlestan D.
+- Castro, Sean Fraser I.
+- Lubuguin, Ralph Rexiel R.
+- Ortega, Xavier Kent C.
