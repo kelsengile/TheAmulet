@@ -3,8 +3,6 @@ public class Main {
 	private static final int MAX_GUESSES = 5;
     private static final String ANSWER = "AMULET";
 	public static void main(String[] args) {
-		The_End();
-		Animation_Thanks ();
 		Animation_Title_Sequence();
 		// Menu
 		int input = Menu();
@@ -163,32 +161,33 @@ public class Main {
 		Animation_Choice();
 		Animation_Choice();
 		Animation_Choice();
-		Scanner sc = new Scanner(System.in);
-		System.out.println("                                          ");
-		System.out.println("                                          ");
-		System.out.println("                                          ");
-		System.out.println(" ======================================== ");
-		System.out.println("                                          ");
-		System.out.println("             Choose Shelter               ");
-		System.out.println("                                          ");
-		System.out.println("  [1] A broken-down house nearby          ");
-		System.out.println("  [2] A distant cottage with a dim light  ");
-		System.out.println("                                          ");
-		System.out.println(" ======================================== ");
-		int option = sc.nextInt();
-		if (option == 1) {
-			Scene2A();
-		}
-		else if (option == 2 ){
-				Scene2B();
-		}
-		else {
-			System.out.println(" ========================= ");
-			System.out.println("  ");
-			System.out.println(" ***** Invalid Input ***** ");
-			System.out.println("  ");
-			System.out.println(" ========================= ");
-			Scene1();
+		try (Scanner sc = new Scanner(System.in)) {
+			System.out.println("                                          ");
+			System.out.println("                                          ");
+			System.out.println("                                          ");
+			System.out.println(" ======================================== ");
+			System.out.println("                                          ");
+			System.out.println("             Choose Shelter               ");
+			System.out.println("                                          ");
+			System.out.println("  [1] A broken-down house nearby          ");
+			System.out.println("  [2] A distant cottage with a dim light  ");
+			System.out.println("                                          ");
+			System.out.println(" ======================================== ");
+			int option = sc.nextInt();
+			if (option == 1) {
+				Scene2A();
+			}
+			else if (option == 2 ){
+					Scene2B();
+			}
+			else {
+				System.out.println(" ========================= ");
+				System.out.println("  ");
+				System.out.println(" ***** Invalid Input ***** ");
+				System.out.println("  ");
+				System.out.println(" ========================= ");
+				Scene1();
+			}
 		}
 	}
 	public static void Scene2A() {
@@ -225,22 +224,22 @@ public class Main {
 		System.out.println("\n\n ======================================== \n");
 		space(2000);
 		Animation_Enter_House ();
-		Scanner sc = new Scanner(System.in);
-		System.out.println("                                          ");
-		System.out.println("                                          ");
-		System.out.println("                                          ");
-		System.out.println(" ======================================== ");
-		System.out.println("                                          ");
-		System.out.println("                 Options                  ");
-		System.out.println("                                          ");
-		System.out.println("  [1] Pick up the mysterious necklace     ");
-		System.out.println("  [2] Leave it alone                      ");
-		System.out.println("                                          ");
-		System.out.println(" ======================================== ");
-		int option = sc.nextInt();
-		if (option == 1) {
-			Animation_First_Pick_Up();
-			space(150);
+		try (Scanner sc = new Scanner(System.in)) {
+			System.out.println("                                          ");
+			System.out.println("                                          ");
+			System.out.println("                                          ");
+			System.out.println(" ======================================== ");
+			System.out.println("                                          ");
+			System.out.println("                 Options                  ");
+			System.out.println("                                          ");
+			System.out.println("  [1] Pick up the mysterious necklace     ");
+			System.out.println("  [2] Leave it alone                      ");
+			System.out.println("                                          ");
+			System.out.println(" ======================================== ");
+			int option = sc.nextInt();
+			if (option == 1) {
+				Animation_First_Pick_Up();
+				space(150);
 			System.out.println(" ======================================== ");
 			String sentence3 = 
 					         "\n  As you try to pick it up, you feel an"
@@ -340,6 +339,7 @@ public class Main {
 			}
 		}
 	}
+	}
 	public static void Scene2B() {
 		space(150);
 		System.out.println(" ======================================== ");
@@ -426,29 +426,30 @@ public class Main {
         }
 		System.out.println("\n\n ======================================== \n");
 		space(2000);
-Scanner sc = new Scanner(System.in);
-		System.out.println("\n\n ======================================== ");
-		System.out.println("                                          ");
-		System.out.println("                 Options                  ");
-		System.out.println("                                          ");
-		System.out.println("        [1] Enter the house again         ");
-		System.out.println("        [2] Go to the cottage again       ");
-		System.out.println("                                          ");
-		System.out.println(" ======================================== ");
-		int option = sc.nextInt();
-		if (option == 1) {
-			SceneV2A();
-		}
-		else if (option == 2){
-			SceneV2B();
-		}
-		else {
-			System.out.println(" ========================= ");
-			System.out.println("  ");
-			System.out.println(" ***** Invalid Input ***** ");
-			System.out.println("  ");
-			System.out.println(" ========================= ");
-			BridgeV2();
+		try (Scanner sc = new Scanner(System.in)) {
+			System.out.println("\n\n ======================================== ");
+			System.out.println("                                          ");
+			System.out.println("                 Options                  ");
+			System.out.println("                                          ");
+			System.out.println("        [1] Enter the house again         ");
+			System.out.println("        [2] Go to the cottage again       ");
+			System.out.println("                                          ");
+			System.out.println(" ======================================== ");
+			int option = sc.nextInt();
+			if (option == 1) {
+				SceneV2A();
+			}
+			else if (option == 2){
+				SceneV2B();
+			}
+			else {
+				System.out.println(" ========================= ");
+				System.out.println("  ");
+				System.out.println(" ***** Invalid Input ***** ");
+				System.out.println("  ");
+				System.out.println(" ========================= ");
+				BridgeV2();
+			}
 		}
 	}
 public static void SceneV2A() {
@@ -486,19 +487,19 @@ public static void SceneV2A() {
     }
 	System.out.println("\n\n ======================================== \n");
 	space(2000);
-	Scanner sc = new Scanner(System.in);
-	System.out.println(" ======================================== ");
-	System.out.println("                                          ");
-	System.out.println("                 Options                  ");
-	System.out.println("                                          ");
-	System.out.println("     [1] Take the necklace again          ");
-	System.out.println("     [2] Leave it alone                   ");
-	System.out.println("                                          ");
-	System.out.println(" ======================================== ");
-	int option = sc.nextInt();
-	if (option == 1) {
-		Animation_First_Pick_Up();
-		space(150);
+	try (Scanner sc = new Scanner(System.in)) {
+		System.out.println(" ======================================== ");
+		System.out.println("                                          ");
+		System.out.println("                 Options                  ");
+		System.out.println("                                          ");
+		System.out.println("     [1] Take the necklace again          ");
+		System.out.println("     [2] Leave it alone                   ");
+		System.out.println("                                          ");
+		System.out.println(" ======================================== ");
+		int option = sc.nextInt();
+		if (option == 1) {
+			Animation_First_Pick_Up();
+			space(150);
 		System.out.println(" ======================================== ");
 		String sentence3 = 
 				         "\n              Nothing happens…                    \r\n";
@@ -546,10 +547,10 @@ public static void SceneV2A() {
 		System.out.println("\n\n ======================================== \n");
 		space(2000);
 		Enclosed_Room();
-	}
-	else if (option == 2){
-		Animation_Leave_House();
-		space(150);
+		}
+		else if (option == 2){
+			Animation_Leave_House();
+			space(150);
 		System.out.println(" ======================================== ");
 		String sentence3 = 
 				         "\n     You didn’t touch the necklace and"
@@ -644,14 +645,15 @@ public static void SceneV2A() {
 			System.out.println(" ========================= ");
 			SceneV2A();
 		}
-	}
-	else {
-		System.out.println(" ========================= ");
-		System.out.println("  ");
-		System.out.println(" ***** Invalid Input ***** ");
-		System.out.println("  ");
-		System.out.println(" ========================= ");
-		SceneV2A();
+		}
+		else {
+			System.out.println(" ========================= ");
+			System.out.println("  ");
+			System.out.println(" ***** Invalid Input ***** ");
+			System.out.println("  ");
+			System.out.println(" ========================= ");
+			SceneV2A();
+		}
 	}
 }
 public static void SceneV2B() {
@@ -1278,17 +1280,18 @@ public static void gameEnd(boolean guessed) {
 		System.out.println(" ");
 	}
 	public static int Menu () {
-		Scanner sc = new Scanner(System.in);
-		System.out.println(" ======================================== ");
-		System.out.println("                                          ");
-		System.out.println("                 Menu                     ");
-		System.out.println("                                          ");
-		System.out.println("             [1] Start Game               ");
-		System.out.println("             [2] Exit                     ");
-		System.out.println("                                          ");
-		System.out.println(" ======================================== ");
-		int option = sc.nextInt();
-		return option;
+		try (Scanner sc = new Scanner(System.in)) {
+			System.out.println(" ======================================== ");
+			System.out.println("                                          ");
+			System.out.println("                 Menu                     ");
+			System.out.println("                                          ");
+			System.out.println("             [1] Start Game               ");
+			System.out.println("             [2] Exit                     ");
+			System.out.println("                                          ");
+			System.out.println(" ======================================== ");
+			int option = sc.nextInt();
+			return option;
+		}
 	}
 public static int Death1 () {
 		Animation_Death ();
@@ -1302,6 +1305,7 @@ public static int Death1 () {
 		System.out.println("                                          ");
 		System.out.println(" ======================================== ");
 		int option = sc.nextInt();
+		sc.close();
 		return option;
 	}
 public static int Death2 () {
@@ -1317,6 +1321,7 @@ public static int Death2 () {
 		System.out.println("                                          ");
 		System.out.println(" ======================================== ");
 		int option = sc.nextInt();
+		sc.close();
 		return option;
 	}
 	// Animations
