@@ -9,13 +9,14 @@
 ---
 
 ##  Overview  
-**The Amulet** is a Halloween-themed project developed during the **Nov Fest 2025 Hackathon Competition**, where it emerged as the **Champion Project**. Built by the team **Caveman Coders**, this project showcases creativity, technical skills, and innovation aligned with the spooky and mysterious theme of Halloween.
+**The Amulet** is a Halloween-themed Game, Terminal based project developed during the **Nov Fest 2025 Hackathon Competition**, where it emerged as the **Champion Project**. Built by the team **Caveman Coders**, this project showcases creativity, technical skills, and innovation aligned with the spooky and mysterious theme of Halloween.
 
 ---
 
 ##  Technologies Used  
 - Java 
 - Eclipse
+- VSCode
 - Git & GitHub 
 
 ---
