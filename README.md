@@ -4,7 +4,7 @@
 **Theme:** Halloween  
 **Team:** Caveman Coders  
 **Program:** Bachelor of Science in Computer Science 1A (2025)  
-**University:** Laguna State Polytechnic University  
+**University:** Laguna State Polytechnic University | College of Computer Studies 
 
 ---
 
