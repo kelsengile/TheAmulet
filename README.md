@@ -23,8 +23,8 @@
 
 ## Developers
 
-- Conel, Kelsen Gile S.
-- Arroyo, Charlestan D.
-- Castro, Sean Fraser I.
-- Lubuguin, Ralph Rexiel R.
-- Ortega, Xavier Kent C.
+Arroyo, Charlestan D.
+Castro, Sean Fraser I.
+Conel, Kelsen Gile S.
+Lubuguin, Ralph Rexiel R.
+Ortega, Xavier Kent C.
